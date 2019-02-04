@@ -40,10 +40,20 @@ INSTALLED_APPS = [
     'hometutorial',
     'ckeditor',
     'ckeditor_uploader',
+    'newsletter',
 
 
 ]
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'nknaveenkumar760@gmail.com'
+EMAIL_HOST_PASSWORD = 'nokiaasha205@'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

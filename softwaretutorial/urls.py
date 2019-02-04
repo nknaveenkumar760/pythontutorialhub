@@ -23,6 +23,7 @@ urlpatterns = [
     url('admin/', admin.site.urls),
     url('ckeditor/', include('ckeditor_uploader.urls')),
     url('', include('hometutorial.urls')),
+    url('newsletter/', include('newsletter.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

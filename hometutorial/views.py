@@ -47,3 +47,12 @@ def mobileapp(request):
 
     return render(request, 'mobileapp.html')
 
+
+def pythonlang(request):
+
+    data = Post.objects.all()
+    value = {
+        'data': data
+    }
+
+    return render(request, 'python.html', value)
