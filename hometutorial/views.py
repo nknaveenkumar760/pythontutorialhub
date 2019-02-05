@@ -56,3 +56,8 @@ def pythonlang(request):
     }
 
     return render(request, 'python.html', value)
+
+
+def login(request):
+
+    return render(request, 'login.html')
