@@ -24,6 +24,7 @@ urlpatterns = [
     url('ckeditor/', include('ckeditor_uploader.urls')),
     url('', include('hometutorial.urls')),
     url('newsletter/', include('newsletter.urls')),
+    url('pythontutorial/', include('pythontutorial.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

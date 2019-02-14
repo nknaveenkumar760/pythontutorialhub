@@ -53,6 +53,7 @@
 	<script src="{% static 'js/respond.min.js' %}"></script>
 	<![endif]-->
 
+
 	</head>
 	<body>
 
@@ -84,10 +85,10 @@
 								<li><a href="{% url 'event' %}">Events</a></li>
 								<li><a href="{% url 'news' %}">News</a></li>
 								<li><a href="{% url 'contacts' %}">Contact</a></li>
-								<li class="btn-cta"><a href="#"><span>Get started</span></a></li>
+								<!--<li class="btn-cta"><a href="#"><span>Get started</span></a></li>-->
 							</ul>
 							<br>
-							<p class="btn-apply"><a href="#">Our Vision</a> <a href="#">Our Missions</a> <a href="{% url 'login' %}">Sign Up</a></p>
+							<p class="btn-apply"><a href="#">Our Vision</a> <a href="#">Our Missions</a> <a href="{% url 'login' %}">Sign In</a></p>
 						</div>
 					</div>
 				</div>
@@ -141,9 +142,9 @@
 						<h4>Contact Info</h4>
 						<ul class="colorlib-footer-links">
 							<li>D 138 masjid wali gali, <br> New Ashok Nagar , New Delhi</li>
-							<li><a href="tel://1234567920"><i class="icon-phone"></i> +91 7270008735</a></li>
-							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@knowledgetutorial.com</a></li>
-							<li><a href="http://luxehotel.com"><i class="icon-location4"></i> knowledgetutorial.com</a></li>
+							<li><i class="icon-phone"></i> +91 7270008735</a></li>
+							<li><i class="icon-envelope"></i> info@knowledgetutorial.com</a></li>
+							<li><i class="icon-location4"></i> knowledgetutorial.com</a></li>
 						</ul>
 					</div>
 					<div class="col-md-2 colorlib-widget">
@@ -163,12 +164,12 @@
 						<h4>Useful Links</h4>
 						<p>
 							<ul class="colorlib-footer-links">
-								<li><a href="#"><i class="icon-check"></i> About Us</a></li>
+								<li><a href="{% url 'about' %}"><i class="icon-check"></i> About Us</a></li>
 								<li><a href="#"><i class="icon-check"></i> Testimonials</a></li>
-								<li><a href="#"><i class="icon-check"></i> Courses</a></li>
-								<li><a href="#"><i class="icon-check"></i> Event</a></li>
-								<li><a href="#"><i class="icon-check"></i> News</a></li>
-								<li><a href="#"><i class="icon-check"></i> Contact</a></li>
+								<li><a href="{% url 'courses' %}"><i class="icon-check"></i> Courses</a></li>
+								<li><a href="{% url 'event' %}"><i class="icon-check"></i> Event</a></li>
+								<li><a href="{% url 'news' %}"><i class="icon-check"></i> News</a></li>
+								<li><a href="{% url 'contacts' %}"><i class="icon-check"></i> Contact</a></li>
 							</ul>
 						</p>
 					</div>
@@ -223,7 +224,7 @@
 	</div>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+		<a href="#" class="js-gotop" style="color:green"><i class="icon-arrow-up2"></i></a>
 	</div>
 
 	<!-- jQuery -->
@@ -249,5 +250,9 @@
 	<script src="{% static 'js/main.js' %}"></script>
     <!--Newsletter-->
 	<script src="{% static 'js/newsletter.js' %}"></script>
+	<!--Python tutorial ajax-->
+	<script src="{% static 'js/python-ajax.js' %}"></script>
+
+
 	</body>
 </html>

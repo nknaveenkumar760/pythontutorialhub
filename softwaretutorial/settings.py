@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'newsletter',
+    'pythontutorial',
 
 
 ]
@@ -152,3 +153,13 @@ STATICFILES_DIRES = [
     os.path.join(BASE_DIR, 'static'),
 
 ]
+
+# Nginx configuration to access static and media file
+'''
+location / static / {
+    alias / home / mysite / static /;
+}
+location / media / {
+    alias / home / mysite / media /;
+}
+'''

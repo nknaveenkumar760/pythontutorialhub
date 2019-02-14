@@ -5,29 +5,27 @@
 <div class="row">
   <div class="col-sm-3">
     <div class="card" style="width: 30rem;">
-
       <div class="thumbnail">
 
 <ul class="nav nav-list primary left-menu">
-<li class="heading">Python Basic Tutorial</li>
-<li><a target="_top" href="/python/index.htm">Python - Home</a></li>
-<li><a target="_top" href="">Python - Overview</a></li>
-<li><a target="_top" href="/python/python_environment.htm">Python - Environment Setup</a></li>
-<li><a target="_top" href="/python/python_basic_syntax.htm">Python - Basic Syntax</a></li>
-<li><a target="_top" href="/python/python_variable_types.htm">Python - Variable Types</a></li>
-<li><a target="_top" href="/python/python_basic_operators.htm">Python - Basic Operators</a></li>
-<li><a target="_top" href="/python/python_decision_making.htm">Python - Decision Making</a></li>
-<li><a target="_top" href="/python/python_loops.htm">Python - Loops</a></li>
-<li><a target="_top" href="/python/python_numbers.htm">Python - Numbers</a></li>
-<li><a target="_top" href="/python/python_strings.htm">Python - Strings</a></li>
-<li><a target="_top" href="/python/python_lists.htm">Python - Lists</a></li>
-<li><a target="_top" href="/python/python_tuples.htm">Python - Tuples</a></li>
-<li><a target="_top" href="/python/python_dictionary.htm">Python - Dictionary</a></li>
-<li><a target="_top" href="/python/python_date_time.htm">Python - Date &amp; Time</a></li>
-<li><a target="_top" href="/python/python_functions.htm">Python - Functions</a></li>
-<li><a target="_top" href="/python/python_modules.htm">Python - Modules</a></li>
-<li><a target="_top" href="/python/python_files_io.htm">Python - Files I/O</a></li>
-<li><a target="_top" href="/python/python_exceptions.htm">Python - Exceptions</a></li>
+    <li class="heading"><h3>Python Basic Tutorial</h3></li>
+<li><a id="overview"  href="{% url 'python_overview' page=1 %}" >Python - Overview</a></li>
+<li><a id="environment" href="{% url 'python_overview' page=2 %}">Python - Environment Setup</a></li>
+<li><a id="syntex" href="{% url 'python_overview' page=3 %}">Python - Basic Syntax</a></li>
+<li><a id="variable" href="{% url 'python_overview' page=4 %}">Python - Variable Types</a></li>
+<li><a id="operators" href="{% url 'python_overview' page=5 %}">Python - Basic Operators</a></li>
+<li><a id="decisionmaking" href="{% url 'python_overview' page=6 %}">Python - Decision Making</a></li>
+<li><a id="loops" href="{% url 'python_overview' page=7 %}">Python - Loops</a></li>
+<li><a id="numbers" href="{% url 'python_overview' page=8 %}">Python - Numbers</a></li>
+<li><a id="strigs" href="{% url 'python_overview' page=9 %}">Python - Strings</a></li>
+<li><a id="list" href="{% url 'python_overview' page=10 %} ">Python - Lists</a></li>
+<li><a id="tuples" href="{% url 'python_overview' page=11 %}">Python - Tuples</a></li>
+<li><a id="dictionay" href="{% url 'python_overview' page=12 %}">Python - Dictionary</a></li>
+<li><a id="datetime" href="{% url 'python_overview' page=13 %}">Python - Date &amp; Time</a></li>
+<li><a id="function" href="{% url 'python_overview' page=14 %}">Python - Functions</a></li>
+<li><a id="modules" href="{% url 'python_overview' page=15 %}">Python - Modules</a></li>
+<li><a id="files" href="{% url 'python_overview' page=16 %}">Python - Files I/O</a></li>
+<li><a id="exception" href="{% url 'python_overview' page=17 %}">Python - Exceptions</a></li>
 </ul>
 <ul class="nav nav-list primary left-menu">
 <li class="heading">Python Advanced Tutorial</li>
@@ -46,20 +44,27 @@
       </div>
     </div>
 
+
   <div class="col-sm-3">
-    <div class="card" style="width: 80rem;">
+    <div class="card" style="width: 75rem;">
       <div class="thumbnail">
           <div class="caption">
           <div class="nav nav-list primary center-menu">
-              <p>/////
-               {% autoescape off %}
-              {% for datas in data %}
-                  {{datas.title}}
-                  {{datas.description}}
+              <h3>{% autoescape off %}
+                  {% for datas in data %}
+              <div id="title" style="color:red" align="center">
+                {{datas.title}}
+              </div>
+              </h3>
+              <div class="pythontutorial">
+              <p>
+               {{datas.description}}
 
                {% endfor %}
                 {% endautoescape %}
               </p>
+              </div>
+
           </div>
       </div>
     </div>
@@ -67,4 +72,34 @@
 </div>
 </div>
 
+
+<!--
+
+  <div class="col-sm-3">
+    <div class="card" style="width: 75rem;">
+      <div class="thumbnail">
+          <div class="caption">
+          <div class="nav nav-list primary center-menu">
+              <div class="pythontutorial">
+              <p>
+               {% autoescape off %}
+              {% for datas in data %}
+              <h3>{{datas.title}}</h3>
+  "                {{datas.description}}
+
+               {% endfor %}
+                {% endautoescape %}
+              </p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+-->
+
 {% endblock %}
+
+
+

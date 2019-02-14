@@ -13,9 +13,9 @@ urlpatterns = [
     path('event', views.event, name='event'),
     path('news', views.news, name='news'),
     path('all_course', views.all_course, name='all_course'),
-    path('python', views.pythonlang, name='python'),
     path('mobileapp', views.mobileapp, name='mobileapp'),
     path('login', views.login, name='login'),
+    path('signup', views.signup, name='signup')
 
 
 ]

@@ -1,5 +1,4 @@
 
-
 /*Newsletter code*/
 
 $(document).ready(function(){
@@ -54,4 +53,5 @@ function validateEmail($email) {
         return false;
    }
 }
+
 

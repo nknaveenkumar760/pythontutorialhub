@@ -87,11 +87,11 @@
 </head>
 <body>
 <div class="login-form">
-    <form action="/examples/actions/confirmation.php" method="post">
+    <form action="" method="post">
 		<div class="avatar">
 			<img src="{% static 'images/avatar.png' %}" alt="Avatar">
 		</div>
-        <h2 class="text-center">Member Login</h2>
+        <h2 class="text-center"> Member Sign up </h2>
         <div class="form-group">
         	<input type="text" class="form-control" name="username" placeholder="Username" required="required">
         </div>
@@ -99,14 +99,17 @@
             <input type="password" class="form-control" name="password" placeholder="Password" required="required">
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Sign In</button>
+            <input type="email" class="form-control" name="email" placeholder="E-mail" required="required">
         </div>
-		<div class="clearfix">
-            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
-            <a href="#" class="pull-right">Forgot Password?</a>
+        <div class="form-group">
+            <input type="phone" class="form-control" name="phone" placeholder="Phone no" required="required">
         </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Sign up</button>
+        </div>
+
     </form>
-    <p class="text-center small">Don't have an account? <a href="{% url 'signup' %}">Sign up here!</a></p>
+
 </div>
 
 {% endblock %}
