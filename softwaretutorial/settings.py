@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'ckeditor',
     'ckeditor_uploader',
     'hometutorial',
@@ -71,6 +72,18 @@ CKEDITOR_CONFIGS = {
         'extraPlugins': ','.join(['codesnippet', 'youtube']),
     }
 }
+=======
+    'hometutorial',
+    'ckeditor',
+    'ckeditor_uploader',
+    'newsletter',
+    'pythontutorial',
+
+
+]
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -104,7 +117,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+<<<<<<< HEAD
                 'django.template.context_processors.media',
+=======
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815
             ],
         },
     },
@@ -124,7 +140,11 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'mysql',
         'port': '3306',
+<<<<<<< HEAD
         'host': '127.0.0.1',
+=======
+        'host': 'localhost',
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815
     }
 }
 
@@ -165,7 +185,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+<<<<<<< HEAD
 MEDIA_ROOT = os.path.join(BASE_DIR, 'data/')  # 'data' is my media folder
+=======
+MEDIA_ROOT = os.path.join(BASE_DIR, 'data/') # 'data' is my media folder
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media/'
 
@@ -173,7 +197,10 @@ MEDIA_ROOT = 'media/'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static/'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815
 STATICFILES_DIRES = [
 
     os.path.join(BASE_DIR, 'static'),

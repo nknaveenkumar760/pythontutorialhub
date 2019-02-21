@@ -8,6 +8,7 @@ from ckeditor.fields import RichTextField
 class Post(models.Model):
     title = models.CharField(max_length=255, blank=True, null=True)
     description = RichTextUploadingField(blank=True, null=True)
+<<<<<<< HEAD
     videoupload = RichTextUploadingField(blank=True, null=True, config_name='special',
                                          external_plugin_resources=[(
                                               'youtube',
@@ -15,12 +16,15 @@ class Post(models.Model):
                                               'plugin.js',
                                           )],
                                           )
+=======
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815
 
     slug = models.SlugField(default='', blank=True)
 
     def save(self):
         self.slug = slugify(self.title)
         super(Post, self).save()
+<<<<<<< HEAD
 
 
 class VideoUploader(models.Model):
@@ -49,3 +53,5 @@ class Video(models.Model):
     def save(self):
         self.slug = slugify(self.name)
         super(Video, self).save()
+=======
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815

@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815
 /*Newsletter code*/
 
 $(document).ready(function(){
@@ -55,3 +58,7 @@ function validateEmail($email) {
    }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815

@@ -1,5 +1,9 @@
 from django.shortcuts import render, HttpResponse
+<<<<<<< HEAD
 from .models import Post, Video
+=======
+from .models import Post
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815
 from django.http import JsonResponse
 # Create your views here.
 
@@ -18,6 +22,7 @@ def python_overview(request, page):
     values_list = list(overview_data.values())
 
     return JsonResponse(values_list, safe=False)
+<<<<<<< HEAD
 
 
 def showvideos(request):
@@ -27,3 +32,5 @@ def showvideos(request):
                }
 
     return render(request, 'online_course_video.html', context)
+=======
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815

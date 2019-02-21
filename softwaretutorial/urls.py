@@ -25,7 +25,10 @@ urlpatterns = [
     url('', include('hometutorial.urls')),
     url('newsletter/', include('newsletter.urls')),
     url('pythontutorial/', include('pythontutorial.urls')),
+<<<<<<< HEAD
     url('paidcourses/', include('paidcourses.urls')),
+=======
+>>>>>>> 2182f3a4b8fdddf73aa0b260257e2d329ad6c815
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
